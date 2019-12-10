@@ -9,6 +9,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import frc.robot.subsystems.DriveTrain;
 
 
 /**
@@ -19,6 +20,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
  * project.
  */
 public class Robot extends TimedRobot {
+  public static DriveTrain driveTrain = new DriveTrain();
   public static OI m_oi;
 
   
