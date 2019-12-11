@@ -34,6 +34,8 @@ public class RobotMap {
 	public static final int OPERATOR_CONTROLLER = 1;
 	public static final int SHOOTER_LEFT_ID = 0;
 	public static final int SHOOTER_RIGHT_ID = 0;
+	public static final int ARM_MOTOR_ID = 0;
+	public static final double ARM_MOTOR_SCALE = 0.5;
 
 
   // If you are using multiple modules, make sure to define both the port
