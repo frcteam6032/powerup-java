@@ -27,6 +27,13 @@ public class RobotMap {
 	public static final int LEFT_STICK_Y = 1;
 	public static final int RIGHT_STICK_Y = 5;
 	public static final double TANK_DRIVE_SCALE_FACTOR = 0.7;
+	public static final int RIGHT_TRIGGER = 3;
+	public static final int LEFT_TRIGGER = 2;
+	public static final int LEFT_STICK_X = 0;
+	public static final double TURNING_RATE = 0.7;
+	public static final int OPERATOR_CONTROLLER = 1;
+	public static final int SHOOTER_LEFT_ID = 0;
+	public static final int SHOOTER_RIGHT_ID = 0;
 
 
   // If you are using multiple modules, make sure to define both the port

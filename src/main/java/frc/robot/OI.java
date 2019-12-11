@@ -16,8 +16,14 @@ import edu.wpi.first.wpilibj.XboxController;
 public class OI {
 
   private XboxController driverController = new XboxController(RobotMap.DRIVER_CONTROLLER);
+  private XboxController operatorController = new XboxController(RobotMap.OPERATOR_CONTROLLER);
+
   
-  public double GetDriverRawAxis(int axis){
+  public double getOperatorRawAxis(int axis){
+    return operatorController.getRawAxis(axis);
+  }
+
+  public double getDriverRawAxis(int axis){
     return driverController.getRawAxis(axis);
   }
 
