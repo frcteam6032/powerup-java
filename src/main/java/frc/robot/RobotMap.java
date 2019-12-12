@@ -19,24 +19,30 @@ public class RobotMap {
   // following variables to use with your drivetrain subsystem.
   // public static int leftMotor = 1;
   // public static int rightMotor = 2;
-  public static final int MOTOR_LEFT_1_ID = 3;
+ 	public static final int MOTOR_LEFT_1_ID = 3;
 	public static final int MOTOR_RIGHT_2_ID = 1;
 	public static final int MOTOR_RIGHT_1_ID = 4;
 	public static final int MOTOR_LEFT_2_ID = 2;
+
+	public static final int SHOOTER_LEFT_ID = 1;
+	public static final int SHOOTER_RIGHT_ID = 2;
+	public static final int ARM_MOTOR_ID = 0;
+
+
 	public static final int DRIVER_CONTROLLER = 0;
+	public static final int OPERATOR_CONTROLLER = 1;
+
+	public static final int LEFT_STICK_X = 0;
 	public static final int LEFT_STICK_Y = 1;
 	public static final int RIGHT_STICK_Y = 5;
-	public static final double TANK_DRIVE_SCALE_FACTOR = 0.7;
+	
 	public static final int RIGHT_TRIGGER = 3;
 	public static final int LEFT_TRIGGER = 2;
-	public static final int LEFT_STICK_X = 0;
-	public static final double TURNING_RATE = 0.7;
-	public static final int OPERATOR_CONTROLLER = 1;
-	public static final int SHOOTER_LEFT_ID = 0;
-	public static final int SHOOTER_RIGHT_ID = 0;
-	public static final int ARM_MOTOR_ID = 0;
-	public static final double ARM_MOTOR_SCALE = 0.5;
+	
 
+	public static final double ARM_MOTOR_SCALE = 0.5;
+	public static final double TANK_DRIVE_SCALE_FACTOR = 0.7;
+	public static final double TURNING_RATE = 0.7;
 
   // If you are using multiple modules, make sure to define both the port
   // number and the module. For example you with a rangefinder:
