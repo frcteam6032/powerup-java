@@ -9,9 +9,9 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import frc.robot.subsystems.Arm;
+
 import frc.robot.subsystems.DriveTrain;
-import frc.robot.subsystems.Shooter;
+
 
 
 /**
@@ -23,8 +23,8 @@ import frc.robot.subsystems.Shooter;
  */
 public class Robot extends TimedRobot {
   public static DriveTrain driveTrain = new DriveTrain();
-  public static Arm arm = new Arm();
-  public static Shooter shooter = new Shooter();
+
+
   public static OI m_oi;
 
   

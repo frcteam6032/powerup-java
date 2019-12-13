@@ -10,6 +10,7 @@ package frc.robot.subsystems;
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
+import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.RobotMap;
 import frc.robot.commands.DriverControls;
@@ -18,10 +19,10 @@ import frc.robot.commands.DriverControls;
  * Add your docs here.
  */
 public class DriveTrain extends Subsystem {
-  private TalonSRX motorLeft1 = new TalonSRX(RobotMap.MOTOR_LEFT_1_ID);
-  private TalonSRX motorLeft2 = new TalonSRX(RobotMap.MOTOR_LEFT_2_ID);
-  private TalonSRX motorRight1 = new TalonSRX(RobotMap.MOTOR_RIGHT_1_ID);
-  private TalonSRX motorRight2 = new TalonSRX(RobotMap.MOTOR_RIGHT_2_ID);
+  private Spark motorLeft1 = new Spark(RobotMap.MOTOR_LEFT_1_ID);
+  private Spark motorLeft2 = new Spark(RobotMap.MOTOR_LEFT_2_ID);
+  private Spark motorRight1 = new Spark(RobotMap.MOTOR_RIGHT_1_ID);
+  private Spark motorRight2 = new Spark(RobotMap.MOTOR_RIGHT_2_ID);
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
@@ -33,13 +34,13 @@ public class DriveTrain extends Subsystem {
   }
 
   public void setLeftMotors(double speed) {
-    motorLeft1.set(ControlMode.PercentOutput, -speed);
-    motorLeft2.set(ControlMode.PercentOutput, -speed);
+    motorLeft1.set(speed);
+    motorLeft2.set(speed);
   }
 
   public void setRightMotors(double speed) {
-    motorRight1.set(ControlMode.PercentOutput, speed);
-    motorRight2.set(ControlMode.PercentOutput, speed);
+    motorRight1.set(-speed);
+    motorRight2.set(-speed);
   }
 
 }
